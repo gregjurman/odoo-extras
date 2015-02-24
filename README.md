@@ -13,7 +13,7 @@ attached prior to being a confirmed sale.
 Licensing - GPL Affero
 ----------------------
 
-    Odoo Addons
+    Odoo Extras - Addons for Odoo
     Copyright (C) 2015 Greg Jurman (<http://github.com/gregjurman>).
 
     This program is free software: you can redistribute it and/or modify
