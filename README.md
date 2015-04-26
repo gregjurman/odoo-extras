@@ -5,10 +5,17 @@ This repository contains addons for Odoo (formally OpenERP) 8.0. These
 are addons that tweak some minor nuisances that others might find helpful.
 
 Document Control Addons
---------------------
+-----------------------
 
 * sale_require_docs - Sales Orders must have supporting documentation
 attached prior to being a confirmed sale.
+
+
+Warehouse Addons
+----------------
+
+* delivery_tracking - Adds forcing the entry of carrier tracking 
+references to stock transfer operations depending on the carrier.
 
 Licensing - GPL Affero
 ----------------------
