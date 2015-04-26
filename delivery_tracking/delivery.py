@@ -27,3 +27,4 @@ class delivery_carrier(models.Model):
     _inherit = "delivery.carrier"
 
     is_trackable = fields.Boolean("Is Trackable?")
+    tracking_url = fields.Char("Carrier Tracking URL", help="The tracking service URL for the carrier. Use '%s' for the tracking reference.")

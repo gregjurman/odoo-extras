@@ -22,6 +22,22 @@
 from openerp import models, fields
 from openerp.tools.translate import _
 
+
+class stock_picking(models.Model):
+    _inherit = 'stock.picking'
+
+    def _generate_tracking_url(self):
+        for picking in self:
+            url_base = picking.carrier_id.tracking_url
+            tracking_ref = picking.carrier_tracking_ref
+            url = False
+            if tracking_ref and url_base and "%s" in url_base:
+                url = url_base % (tracking_ref,)
+            picking.carrier_track_url = url
+
+    carrier_track_url = fields.Char("External Tracking", compute="_generate_tracking_url", store=False)
+
+
 class stock_transfer_details(models.TransientModel):
     _inherit = 'stock.transfer_details'
 
