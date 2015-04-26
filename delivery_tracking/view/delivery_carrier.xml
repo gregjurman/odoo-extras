@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_delivery_carrier_trackable_form_view">
+			<field name="name">delivery.carrier.trackable.form</field>
+			<field name="model">delivery.carrier</field>
+			<field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
+			<field name="arch" type="xml">
+				<field name="active" position="after">
+					<field name="is_trackable"/>
+				</field>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_stock_transfer_details_tracking_form_view">
+			<field name="name">stock.transfer_details.tracking.form</field>
+			<field name="model">stock.transfer_details</field>
+			<field name="inherit_id" ref="stock.view_stock_enter_transfer_details"/>
+			<field name="arch" type="xml">
+				<footer position="before">
+					<seperator string="Delivery Tracking"/>
+					<div class="oe_grey">
+						Enter the carrier tracking number for this transfer.  
+                        		</div>
+					<field name="carrier_tracking_req" invisible="True"/>
+					<field name="carrier_tracking_ref" attrs="{'required':[('carrier_tracking_req','=',True)]}"/>
+				</footer>
+			</field>
+		</record>
+			
+	</data>
+</openerp>
