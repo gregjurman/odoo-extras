@@ -8,8 +8,7 @@ Document Control Addons
 -----------------------
 
 * sale_require_docs - Sales Orders must have supporting documentation
-attached prior to being a confirmed sale. Also adds a tracking button
-to Stock Operations Tree View.
+attached prior to being a confirmed sale. 
 
 
 Warehouse Addons
@@ -17,6 +16,7 @@ Warehouse Addons
 
 * delivery_tracking - Adds forcing the entry of carrier tracking 
 references to stock transfer operations depending on the carrier.
+Also adds a tracking button to Stock Operations Tree View.
 
 Licensing - GPL Affero
 ----------------------
