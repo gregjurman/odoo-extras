@@ -21,20 +21,20 @@
 
 
 {
-    'name': 'Delivery Method Tracking Number',
+    'name': 'External Delivery Tracking',
     'version': '0.1',
     'category': 'Inventory Management',
     'description': """
-Adds Tracking Numbers to deliveries.
+Adds Tracking Numbers to deliveries. Also allows for linking to an external
+tracking website.
 ===================================================
 
-Adds tracking numbers to deliveries. Allows for auto-generation of tracking
-numbers for delivery methods that do not provide them.
+Adds tracking numbers to deliveries. 
 ------------------------------------------------------------
 """,
     'author': 'Greg Jurman',
     'website': 'https://github.com/gregjurman/',
-    'depends': ['delivery'],
+    'depends': ['delivery', 'stock'],
     'data': ['view/delivery_carrier.xml'],
     'demo': [],
     'test': [],
