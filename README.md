@@ -8,7 +8,8 @@ Document Control Addons
 -----------------------
 
 * sale_require_docs - Sales Orders must have supporting documentation
-attached prior to being a confirmed sale.
+attached prior to being a confirmed sale. Also adds a tracking button
+to Stock Operations Tree View.
 
 
 Warehouse Addons
