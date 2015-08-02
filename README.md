@@ -18,6 +18,14 @@ Warehouse Addons
 references to stock transfer operations depending on the carrier.
 Also adds a tracking button to Stock Operations Tree View.
 
+
+Manufacturing Addons
+--------------------
+
+* mrp_defaultbom - Creates a blank BoM with defaults on creation
+of a product.
+
+
 Licensing - GPL Affero
 ----------------------
 
