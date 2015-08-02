@@ -26,16 +26,20 @@
     'category': 'Manufacturing',
     'description': """
 Create a BOM for new Product with a set default MRP routing.
-===================================================
+=============================================================
 
 Creates a BOM for a product when the product is first created
 to quickly get them running in MRP.
-------------------------------------------------------------
+-------------------------------------------------------------
+
+Use Set Defaults in developer mode to set default routing and
+other settings to carry over to newly generated BoMs.
+
 """,
     'author': 'Greg Jurman',
     'website': 'https://github.com/gregjurman/',
     'depends': ['product', 'mrp'],
-    'data': [],
+    'data': [''],
     'demo': [],
     'test': [],
     'installable': True,
